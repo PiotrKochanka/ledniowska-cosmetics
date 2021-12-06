@@ -1,0 +1,40 @@
+body 
+{
+    padding: 0;
+    padding-bottom: 0px;
+    margin: 0;
+    font-size-adjust: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    -webkit-text-size-adjust: none;
+    overflow-x: hidden;
+    transition: padding .5s linear;
+}
+
+body * 
+{
+    box-sizing: border-box;
+}
+
+.strona 
+{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.block
+{
+    margin: 0 auto!important;
+}
+
+.width100
+{
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.width1 
+{
+    width: 1245px;
+}
