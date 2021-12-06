@@ -1,0 +1,29 @@
+.animacja-kontener
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../graphic/start-tlo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.animacja-dane 
+{
+    margin-top: -64px!important;
+}
+
+.logo
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.logo img 
+{
+    max-height: 320px;
+}

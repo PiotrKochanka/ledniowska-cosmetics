@@ -1,0 +1,27 @@
+#menu-gora
+{
+    width: 100%;
+}
+
+.menu-gora-1-poziom 
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0 64px;
+}
+
+.menu-gora-1-poziom li 
+{
+
+}
+
+.menu-gora-1-poziom li a 
+{
+    text-decoration-color: transparent;
+    color: black;
+    font-size: 18px;
+}
