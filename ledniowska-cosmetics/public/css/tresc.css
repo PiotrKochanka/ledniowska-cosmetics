@@ -1,0 +1,58 @@
+.h2-text
+{
+    font-weight: 400;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 64px;
+}
+
+.o-nas > span {
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    padding: 0 126px;
+}
+
+/* Lista o nas */
+
+.lista-onas
+{
+    margin-top: 88px;
+}
+
+.lista-onas-1
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 0 32px;
+}
+
+.lista-onas-1 li 
+{
+    max-width: 320px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
+    -moz-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
+    box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
+}
+
+.lista-onas-1 li h3 
+{
+    text-align: center;
+    font-weight: 400;
+}
+
+.lista-onas-1 li span 
+{
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
