@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="{{ asset('css/szkielet.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/animacja.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/menu-gora.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/tresc.css') }}">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-        <script src="https://use.fontawesome.com/ebd2d904e8.js"></script>
-        <title>Strona główna</title>
-    </head>
-    <body>
-        <div class="strona">
-            <!--Nagłówek-->
+@extends('layout')
+
+@section('content')
+<div class="strona">
             <header>
                 <div class="animacja-kontener width100">
                     <div class="animacja-dane width1 block">
@@ -60,7 +49,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="void-img-tlo width100">
+                    <div class="void-img"></div>
+                </div>
+                <div class="uslugi-tlo width100">
+                    <div class="uslugi width1 block">
+
+                    </div>
+                </div>
             </main>
-        </div>
-    </body>
-</html>
+</div>
+@stop

@@ -18,6 +18,7 @@
 .lista-onas
 {
     margin-top: 88px;
+    margin-bottom: 88px;
 }
 
 .lista-onas-1
@@ -40,7 +41,7 @@
     align-items: center;
     -webkit-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
     -moz-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
-    box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
+    box-shadow: 0px 0px 34px -6px rgba(215, 215, 215, 0.568);
 }
 
 .lista-onas-1 li h3 
@@ -55,4 +56,56 @@
     font-weight: 300;
     font-size: 14px;
     text-align: center;
+    padding: 0 40px;
 }
+
+/* ikony */
+
+.lista-onas-1 li:first-child::before 
+{
+    content: '';
+    background-image: url(../graphic/dos.png);
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.lista-onas-1 li:nth-child(2)::before 
+{
+    content: '';
+    background-image: url(../graphic/natural.png);
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.lista-onas-1 li:last-child::before 
+{
+    content: '';
+    background-image: url(../graphic/dos.png);
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Tła */
+
+.void-img-tlo
+{
+    height: 477px;
+}
+.void-img
+{
+    background-image: url(../graphic/tlo-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+
+/* Usługi */
