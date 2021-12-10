@@ -54,7 +54,24 @@
                 </div>
                 <div class="uslugi-tlo width100">
                     <div class="uslugi width1 block">
-
+                        <ul class="lista-uslugi">
+                            <li>
+                                <div class="uslugi-ikona-tlo">
+                                    <div class="uslugi-ikona-kosm"></div>
+                                </div>
+                                <h3>Kosmetyka</h3>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+                                <a href="#" class="btn-more">Zobacz więcej</a>
+                            </li>
+                            <li>
+                                <div class="uslugi-ikona-tlo">
+                                    <div class="uslugi-ikona-est"></div>
+                                </div>
+                                <h3>Medycyna estetyczna</h3>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+                                <a href="#" class="btn-more">Zobacz więcej</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </main>

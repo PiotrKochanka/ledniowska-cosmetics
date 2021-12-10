@@ -6,19 +6,38 @@
     margin-top: 64px;
 }
 
+.o-nas
+{
+    background-image: url(../graphic/o-nas.jpeg);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: center 150px;
+}
+
 .o-nas > span {
     display: block;
     text-align: center;
     font-weight: 300;
     padding: 0 126px;
+    position: relative;
+    font-size: 18px;
+}
+
+/* linia */
+
+.o-nas > span:after
+{
+    content: url(../graphic/linia.png);
+    position: absolute;
+    bottom: -32px;
 }
 
 /* Lista o nas */
 
 .lista-onas
 {
-    margin-top: 88px;
-    margin-bottom: 88px;
+    margin-top: 140px;
+    margin-bottom: 86px;
 }
 
 .lista-onas-1
@@ -33,8 +52,8 @@
 
 .lista-onas-1 li 
 {
-    max-width: 320px;
-    height: 320px;
+    max-width: 30vw;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,7 +73,7 @@
 {
     display: block;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     padding: 0 40px;
 }
@@ -97,7 +116,7 @@
 
 .void-img-tlo
 {
-    height: 477px;
+    height: 65vh;
 }
 .void-img
 {
@@ -109,3 +128,53 @@
 
 
 /* Usługi */
+
+.lista-uslugi
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.lista-uslugi li 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista-uslugi li span 
+{
+    text-align: center;
+}
+
+.lista-uslugi li a 
+{
+
+}
+
+
+/* usługi ikony */
+
+.uslugi-ikona-tlo
+{
+    width: 400px;
+    height: 200px;
+}
+
+.uslugi-ikona-kosm
+{
+    background-image: url(../graphic/kosmetyka.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.uslugi-ikona-est
+{
+    background-image: url(../graphic/estetyczna.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
