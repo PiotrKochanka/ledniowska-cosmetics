@@ -54,6 +54,7 @@
                 </div>
                 <div class="uslugi-tlo width100">
                     <div class="uslugi width1 block">
+                        <h3 class="h3-uslugi h2-text">Nasze usługi</h3>
                         <ul class="lista-uslugi">
                             <li>
                                 <div class="uslugi-ikona-tlo">

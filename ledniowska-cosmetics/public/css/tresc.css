@@ -4,6 +4,23 @@
     text-align: center;
     font-size: 28px;
     margin-top: 64px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.h3-uslugi
+{
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.h2-text:after
+{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #b89c38;
+    margin: 24px auto;
 }
 
 .o-nas
@@ -11,7 +28,7 @@
     background-image: url(../graphic/o-nas.jpeg);
     background-repeat: no-repeat;
     background-size: 20%;
-    background-position: center 150px;
+    background-position: center 190px;
 }
 
 .o-nas > span {
@@ -21,6 +38,8 @@
     padding: 0 126px;
     position: relative;
     font-size: 18px;
+    color: rgb(68, 68, 68);
+    
 }
 
 /* linia */
@@ -61,12 +80,15 @@
     -webkit-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
     -moz-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
     box-shadow: 0px 0px 34px -6px rgba(215, 215, 215, 0.568);
+    border-radius: 0.6em;
 }
 
 .lista-onas-1 li h3 
 {
     text-align: center;
     font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
 }
 
 .lista-onas-1 li span 
@@ -76,6 +98,7 @@
     font-size: 16px;
     text-align: center;
     padding: 0 40px;
+    color: rgb(68, 68, 68);
 }
 
 /* ikony */
@@ -83,12 +106,13 @@
 .lista-onas-1 li:first-child::before 
 {
     content: '';
-    background-image: url(../graphic/dos.png);
+    background-image: url(../graphic/ind.png);
     display: block;
     height: 50px;
     width: 50px;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-bottom: 12px;
 }
 .lista-onas-1 li:nth-child(2)::before 
 {
@@ -99,6 +123,7 @@
     width: 50px;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-bottom: 12px;
 }
 .lista-onas-1 li:last-child::before 
 {
@@ -109,6 +134,7 @@
     width: 50px;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-bottom: 12px;
 }
 
 
@@ -116,7 +142,7 @@
 
 .void-img-tlo
 {
-    height: 65vh;
+    height: 48vh;
 }
 .void-img
 {
@@ -129,12 +155,31 @@
 
 /* Usługi */
 
+.uslugi-tlo
+{
+    padding: 86px 0;
+    background-image: url(../graphic/tlo-uslugi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -150px;
+}
+
 .lista-uslugi
 {
     padding: 0;
     margin: 0;
     list-style-type: none;
     display: flex;
+    gap: 0 48px;
+    padding: 0 8px;
+}
+
+.lista-uslugi h3 
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 32px;
 }
 
 .lista-uslugi li 
@@ -142,16 +187,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: white;
+    -webkit-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
+    -moz-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
+    box-shadow: 0px 0px 34px -6px rgba(215, 215, 215, 0.568);
+    border-radius: 0.3em;
 }
 
 .lista-uslugi li span 
 {
     text-align: center;
+    color: rgb(68, 68, 68);
+    font-weight: 300;
+    line-height: 24px;
+    padding: 0 64px;
+    display: block;
 }
 
 .lista-uslugi li a 
 {
-
+    margin-top: 24px;
+    margin-bottom: 32px;
+    color: rgb(75, 75, 75);
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -159,8 +218,8 @@
 
 .uslugi-ikona-tlo
 {
-    width: 400px;
-    height: 200px;
+    width: 100%;
+    height: 400px;
 }
 
 .uslugi-ikona-kosm
@@ -169,6 +228,8 @@
     background-size: cover;
     width: 100%;
     height: 100%;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
 }
 
 .uslugi-ikona-est
@@ -177,4 +238,6 @@
     background-size: cover;
     width: 100%;
     height: 100%;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
 }
