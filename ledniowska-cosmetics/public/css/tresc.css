@@ -1,8 +1,8 @@
 .h2-text
 {
-    font-weight: 400;
+    font-weight: 200;
     text-align: center;
-    font-size: 28px;
+    font-size: 34px;
     margin-top: 64px;
     font-family: 'Poppins', sans-serif;
 }
@@ -23,12 +23,27 @@
     margin: 24px auto;
 }
 
+.o-nas-tlo:before
+{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 960px;
+    background-image: url(../graphic/o-nas-tlo.jpeg);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 900px;
+    opacity: 0.06;
+}
+
 .o-nas
 {
     background-image: url(../graphic/o-nas.jpeg);
     background-repeat: no-repeat;
-    background-size: 20%;
+    background-size: 25%;
     background-position: center 190px;
+    position: relative;
 }
 
 .o-nas > span {
@@ -53,9 +68,14 @@
 
 /* Lista o nas */
 
+.h2-dlaczegomy
+{
+    margin-bottom: 40px;
+}
+
 .lista-onas
 {
-    margin-top: 140px;
+    margin-top: 200px;
     margin-bottom: 86px;
 }
 
@@ -81,6 +101,7 @@
     -moz-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
     box-shadow: 0px 0px 34px -6px rgba(215, 215, 215, 0.568);
     border-radius: 0.6em;
+    background: white;
 }
 
 .lista-onas-1 li h3 
@@ -150,6 +171,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+.void-2-img
+{
+    background-image: url(../graphic/tlo-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 
@@ -213,13 +245,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 /* usługi ikony */
+
+.uslugi-ikona
+{
+    transition: 0.6s;
+    transform: scale(1);
+}
 
 .uslugi-ikona-tlo
 {
     width: 100%;
     height: 400px;
+    overflow: hidden;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
 }
 
 .uslugi-ikona-kosm
@@ -228,8 +268,13 @@
     background-size: cover;
     width: 100%;
     height: 100%;
-    border-top-left-radius: 0.3em;
-    border-top-right-radius: 0.3em;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+}
+
+.lista-uslugi li:hover .uslugi-ikona
+{
+    transform: scale(1.1);
 }
 
 .uslugi-ikona-est
@@ -238,6 +283,38 @@
     background-size: cover;
     width: 100%;
     height: 100%;
-    border-top-left-radius: 0.3em;
-    border-top-right-radius: 0.3em;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+}
+
+/* Cennik startowa */
+
+.cennik-startowa-tlo
+{
+    margin-bottom: 32px;
+    margin-top: 106px;
+    display: flex;
+    justify-content: center;
+}
+
+.cennik-startowa-tlo a 
+{
+    text-decoration-color: transparent;
+    color: black;
+    display: black;
+    background: white;
+    border: 2px solid #b89c38;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    padding: 14px 64px;
+    border-radius: 2rem;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.cennik-startowa-tlo a:hover 
+{
+    color: white;
+    background: #b89c38;
+    text-decoration-color: transparent;
 }

@@ -5,9 +5,10 @@
     background-image: url(../graphic/start-tlo.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 110%;
     display: flex;
     align-items: center;
+    transition: 15s;
 }
 
 .animacja-dane 
