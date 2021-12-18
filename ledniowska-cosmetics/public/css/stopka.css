@@ -1,0 +1,60 @@
+.stopka-kontener
+{
+    background-image: url(../graphic/stopka_tlo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.stopka-info
+{
+    color: rgb(207, 207, 207);
+    display: flex;
+    gap: 0 16px;
+    padding: 200px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.stopka-info strong 
+{
+    font-weight: 500;
+}
+
+.stopka-podstrona
+{
+    margin-top: 100px !important;
+}
+
+.stopka-info .kolumna 
+{
+    width: 400px;
+}
+
+.h3-stopka
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.stopka-skrot
+{
+    font-size: 14px;
+}
+
+.stopka-tlo
+{
+    background: #2C2C2C;
+    padding: 24px 0;
+}
+
+.stopka, .autor a
+{
+    color: #999;
+    font-size: 13px;
+}
+
+.stopka-skrot p, .stopka-tresc p
+{
+    margin-bottom: 4px;
+    font-size: 14px;
+}

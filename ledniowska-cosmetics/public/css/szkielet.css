@@ -38,3 +38,12 @@ body *
 {
     width: 1245px;
 }
+
+main
+{
+    padding-bottom: 100px;
+    background: url(../graphic/bottom-web.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}

@@ -40,7 +40,7 @@
     bottom: -8px;
 }
 
-.menu-gora-1-poziom li:hover a:after 
+.menu-gora-1-poziom > li:hover > a:after 
 {
     display: block;
     animation: myAnim 0.4s ease 0s 1 normal forwards;
@@ -55,3 +55,41 @@
       transform: scaleX(1);
     }
   }
+
+/* 2nd poziom */
+
+.menu-gora-2-poziom
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    display: none;
+    background: white;
+    padding: 10px 20px;
+    border-radius:0.3em;
+    -webkit-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
+    -moz-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
+    box-shadow: 0px 0px 34px -6px rgba(215, 215, 215, 0.568);
+}
+
+.menu-gora-2-poziom > li > a 
+{
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+.menu-gora-2-poziom > li > a:hover 
+{
+    opacity: 0.6;
+}
+
+.menu-gora-2-poziom > li
+{
+    padding: 4px 0;
+}
+
+.menu-gora-1-poziom > li:hover .menu-gora-2-poziom 
+{
+    display: block;
+}

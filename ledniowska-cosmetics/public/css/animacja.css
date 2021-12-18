@@ -2,13 +2,30 @@
 {
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto 
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: 15s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+}
+
+/* strona startowa */
+.start-foto
+{
     background-image: url(../graphic/start-tlo.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 110%;
-    display: flex;
-    align-items: center;
-    transition: 15s;
 }
 
 .animacja-dane 
@@ -77,4 +94,54 @@
     opacity: 0;
     transform: translateY(16px);
   }
+}
+
+/* podstrona */
+
+.logo-podstrona
+{
+  width: max-content;
+}
+
+.logo-podstrona img 
+{
+  max-height: 100px;
+  margin-top: 24px;
+}
+
+/* kosmetyka */
+
+.kosmetyka-foto
+{
+  background: url(../graphic/kosmetyka.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+/* medycyna */
+
+.medycyna-foto
+{
+  background: url(../graphic/estetyczna.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+/* cennik */
+
+.cennik-foto
+{
+  
+}
+
+/* Kontakt */
+
+.kontakt-foto
+{
+  background: url(../graphic/kontakt.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }

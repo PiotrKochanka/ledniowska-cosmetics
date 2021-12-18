@@ -1,0 +1,16 @@
+.sticky
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: white;
+    transition: 0.5s;
+    gap: 0 126px;
+    -webkit-box-shadow: 0px 7px 17px -7px rgba(202, 202, 202, 1);
+    -moz-box-shadow: 0px 7px 17px -7px rgba(202, 202, 202, 1);
+    box-shadow: 0px 7px 17px -7px rgba(202, 202, 202, 1);
+}

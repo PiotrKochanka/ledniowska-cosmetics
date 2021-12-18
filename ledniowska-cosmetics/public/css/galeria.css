@@ -140,7 +140,7 @@
 
     display: block;
     overflow: hidden;
-
+    height: 750px!important;
     margin: 0;
     padding: 0;
 }
@@ -237,4 +237,66 @@
 .slick-dots
 {
     display: none!important;
+}
+
+/*Start/Pause*/
+.rotator-buttons
+{
+	
+}
+.galeria-tlo:hover .rotator-pause,  .galeria-tlo:hover .rotator-play,.galeria-tlo:hover .rotator-buttons
+{
+	opacity:1!important;
+}
+.galeria-tlo .rotator-buttons .rotator-pause:focus,  .galeria-tlo .rotator-buttons .rotator-play:focus
+{
+	opacity:1!important;
+}
+.rotator-buttons
+{
+	width: 60px;
+	height: 30px;
+	
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	z-index: 9;
+}
+
+.galeria-tlo
+{
+	position: relative;
+}
+.rotator-pause 
+{
+	border: 0px none transparent;
+	background: transparent;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background: rgba(0, 0, 0, 0.637);
+	opacity:0;
+}
+.rotator-pause:hover 
+{
+	opacity: 0.7;
+}
+
+.rotator-play
+{
+	border: 0px none transparent;
+	background: transparent;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	display: none;
+	color: white;
+	background: rgba(0, 0, 0, 0.637);
+	opacity:0;
+}
+.rotator-play:hover 
+{
+	opacity: 0.7;
 }

@@ -1,0 +1,49 @@
+#menu-mobilne
+{
+    display: none;
+}
+
+@media all and (min-width: 320px) and (max-width: 1023px)
+{
+    .sticky
+    {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1023px) and (max-width: 1279px)
+{
+    .width1
+    {
+        width: 992px;
+    }
+    .lista-onas-1 li h3, .lista-uslugi h3
+    {
+        font-size: 20px;
+    }
+    .o-nas
+    {
+        background-position: center 220px;
+    }
+    .lista-onas-1 li
+    {
+        height: 300px;
+    }
+    .icon-scroll
+    {
+        bottom: 16px;
+    }
+    .menu-gora-2-poziom
+    {
+        z-index: 1;
+    }
+    .galeria-main .galeria-foto-tlo, .slick-list
+    {
+        height: 500px!important;
+    }
+    .galeria-main
+    {
+        width: 700px;
+        height: 500px;
+    }
+}

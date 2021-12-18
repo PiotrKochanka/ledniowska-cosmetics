@@ -1,0 +1,75 @@
+.cennik-tlo
+{
+    margin-top: 100px!important;
+}
+
+.cennik, .Kosmetyka-cennik, .medycyna-cennik
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Kosmetyka-cennik, .medycyna-cennik
+{
+    display: none;
+}
+
+.cennik
+{
+    width: 100%;
+    gap: 32px 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cennik li 
+{
+    background: rgb(241, 241, 241);
+    border-radius: 2rem;
+}
+
+.btn-cennik
+{
+    margin: 0;
+    padding: 0;
+    border: 0px none transparent;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-radius: 2rem;
+    background: rgb(230, 230, 230);
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.cennik li ul 
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 24px;
+    padding-top: 16px;
+}
+
+.cennik li ul li
+{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cennik li ul li span:first-child 
+{
+    font-size: 24px;
+}
+
+.cennik li ul li span:last-child
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: #b89c38;
+}

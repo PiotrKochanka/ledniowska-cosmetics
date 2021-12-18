@@ -9,7 +9,12 @@
         <link rel="stylesheet" href="{{ asset('css/menu-gora.css') }}">
         <link rel="stylesheet" href="{{ asset('css/tresc.css') }}">
         <link rel="stylesheet" href="{{ asset('css/galeria.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/stopka.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/scroll.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/mobilne.css')}}">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
         
         <!-- Scripts -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
@@ -18,29 +23,102 @@
         
         <script src="{{ asset('js/script.js') }}" defer></script>
         <script src="{{ asset('js/slick.min.js') }}" defer></script>
-        <title>Strona główna</title>
+        @yield('title')
     </head>
     <body>
+        <nav id="menu-mobilne">
+            <div class="menu-mobilne-pasek">
+                <a class="menu-mobilne-logo" href="start,0"><img src="grafika/logo.png" alt="Logo" title="Powrót do strony głównej"></a>
+                <div class="menu-mobile-button"><div class="hamburger"><span></span><span></span><span></span><span></span></div></div>
+            </div>
+            <div class="menu-mobilne-tekst">
+                <div id="menu-gora-mobilne" class="width1 block">
+                    <!--Menu-->
+                    <ul class="menu-gora-1-poziom">
+                        <li><a href="#o-nas-odn">O Nas</a></li>
+                        <li><a href="#uslugi-odn">Usługi</a>
+                            <ul class="menu-gora-2-poziom">
+                                <li><a href="/kosmetyka">Kosmetyka</a></li>
+                                <li><a href="/medycyna">Medycyna estetyczna</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/cennik">Cennik</a></li>
+                        <li><a href="#galeria-odn">Galeria</a></li>
+                        <li><a href="/kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <header>
+            <div class="animacja-kontener width100">
+                @yield('main-foto')
+                <div class="animacja-dane width1 block">
+                    <!--Logo-->
+                    <div class="logo-tlo"><a href="/" class="logo"><img src="{{ asset('graphic/logo.png') }}" alt="logo"></a></div>
+                    <div id="menu-gora" class="width1 block">
+                        <!--Menu-->
+                        <ul class="menu-gora-1-poziom">
+                            <li><a href="#o-nas-odn">O Nas</a></li>
+                            <li><a href="#uslugi-odn">Usługi</a>
+                                <ul class="menu-gora-2-poziom">
+                                    <li><a href="/kosmetyka">Kosmetyka</a></li>
+                                    <li><a href="/medycyna">Medycyna estetyczna</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/cennik">Cennik</a></li>
+                            <li><a href="#galeria-odn">Galeria</a></li>
+                            <li><a href="/kontakt">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='icon-scroll'></div>
+            </div>
+        </header>
+        <!--content-->
         @yield('content')
+        <!--footer-->
         <footer>
             <div class="stopka-kontener width100">
                 <div class="stopka-info width1 block">
                     <div class="kolumna">
                         <div class="stopka-tresc">
                             <h3 class="h3-stopka">Lokalizacja</h3>
+                            <div class="stopka-skrot">
+                                <strong>Sekrety piękna</strong>
+                                <p>Al. J. Pawła II 8/5</p>
+                                <p>62-035 Luboń</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kolumna">
+                        <div class="stopka-tresc">
+                            <h3 class="h3-stopka">Godziny otwarcia</h3>
                         </div>
                     </div>
                     <div class="kolumna">
                         <div class="stopka-tresc">
                             <h3 class="h3-stopka">Kontakt</h3>
+                            <p>e-mail: sekretypiekna8@gmail.com</p>
+                            <p>tel: 511 560 987</p>
+                            <div class="social-media">
+                                <a href="#"></a>
+                                <a href="#"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="stopka">
+            </div>
+            <div class="stopka-tlo width100">
+                <div class="stopka width1 block">
                     <div class="autor"><span>Realizacja: </span><a href="#"><span>Piotr Kochanka</span></a></div>
                     <div class="marka"><span>@ Salon kosmetyczny Sekrety Piękna</span></div>
                 </div>
             </div>
         </footer>
+        <!--Przycisk to top-->
+        <div class="button-top">
+            <a href="#"></a>
+        </div>
     </body>
 </html>

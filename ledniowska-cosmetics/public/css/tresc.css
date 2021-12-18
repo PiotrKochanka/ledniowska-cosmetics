@@ -1,3 +1,38 @@
+/* button top */
+
+.button-top
+{
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+}
+
+.button-top a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 50px;
+    height: 50px;
+    background: rgb(197, 197, 197);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.button-top a:before 
+{
+    content: url(../graphic/to-top.png);
+    margin-top: -4px;
+}
+
+.button-top a:hover 
+{
+    opacity: 0.6;
+}
+
+/* */
+
 .h2-text
 {
     font-weight: 200;
@@ -39,7 +74,7 @@
 
 .o-nas
 {
-    background-image: url(../graphic/o-nas.jpeg);
+    background-image: url(../graphic/o-nas.png);
     background-repeat: no-repeat;
     background-size: 25%;
     background-position: center 190px;
@@ -317,4 +352,112 @@
     color: white;
     background: #b89c38;
     text-decoration-color: transparent;
+}
+
+/* kosmetyka */
+
+.podstrona-void
+{
+    width: 100%;
+    height: 80vh;
+    margin-top: 0px;
+}
+
+.h2-podstrona
+{
+    color: black;
+    font-size: 48px;
+    font-weight: 400;
+    position: absolute;
+}
+
+.h2-podstrona:after
+{
+    background: black;
+}
+
+.lista-uslugi
+{
+    margin-top: 48px;
+}
+
+.lista-uslugi-1
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 0 32px;
+}
+
+.lista-uslugi-1 li
+{
+    padding-bottom: 32px;
+}
+
+.lista-uslugi-1 li img 
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.uslugi > span {
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    padding: 0 126px;
+    position: relative;
+    font-size: 18px;
+    color: rgb(68, 68, 68);
+}
+
+/* kontakt */
+
+.mapa-tlo
+{
+    margin-bottom: -100px;
+    height: 500px;
+}
+
+.mapa-tlo iframe 
+{
+    height: 100%;
+}
+
+.img-kontakt
+{
+    width: 800px;
+    height: 1000px;
+    background: url(../graphic/kontakt-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.kontakt-tlo
+{
+    padding: 100px 100px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.kontakt
+{
+    background: white;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    padding: 48px 126px;
+    -webkit-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
+    -moz-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
+    box-shadow: 0px 0px 34px -6px rgba(215, 215, 215, 0.568);
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakt strong 
+{
+    margin-top: 16px;
 }
