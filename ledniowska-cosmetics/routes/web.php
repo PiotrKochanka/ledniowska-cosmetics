@@ -42,3 +42,9 @@ Route::any('/welcome', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/cms-cennik', [App\Http\Controllers\UserController::class, 'index'])->name('cms-cennik');
+Route::get('/cms-uslugi', [App\Http\Controllers\UserController::class, 'index'])->name('cms-uslugi');
+
+// użytkownicy
+Route::get('/home/users', [App\Http\Controllers\UserController::class, 'index'])->name('users');

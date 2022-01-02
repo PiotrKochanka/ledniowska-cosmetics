@@ -15,16 +15,26 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/szkielet.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/animacja.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/menu-gora.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/tresc.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/galeria.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/stopka.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/scroll.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/cennik.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/mobilne.css')}}">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -72,7 +82,7 @@
                         @endguest
                     </ul>
                 </div>
-            </div>
+            </div> --}}
         </nav>
 
         <main class="py-4">
