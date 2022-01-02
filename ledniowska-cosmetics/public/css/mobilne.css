@@ -13,6 +13,10 @@
 
 @media all and (min-width: 1023px) and (max-width: 1279px)
 {
+    .galeria .galeria-foto-tlo img, .slick-vertical .slick-slide
+    {
+        max-width: 275px;
+    }
     .width1
     {
         width: 992px;

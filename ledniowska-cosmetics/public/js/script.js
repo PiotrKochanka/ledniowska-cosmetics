@@ -20,7 +20,6 @@ $(document).ready(function() {
 			var height = $(this).height()
 			var endY  = initY + $(this).height()
 	
-			// Check if the element is in the viewport.
 			var visible = isInViewport(this)
 			if(visible) {
 			  var diff = scrolled - initY

@@ -45,6 +45,8 @@
 {
     background: #2C2C2C;
     padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .stopka, .autor a
@@ -53,8 +55,23 @@
     font-size: 13px;
 }
 
+.stopka
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .stopka-skrot p, .stopka-tresc p
 {
     margin-bottom: 4px;
     font-size: 14px;
+}
+
+/*Login*/
+
+.hidden a 
+{
+    color: #999;
+    font-size: 13px;    
 }
