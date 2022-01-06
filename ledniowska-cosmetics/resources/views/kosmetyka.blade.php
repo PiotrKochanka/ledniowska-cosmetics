@@ -10,30 +10,24 @@
 @section('content')
 <div class="width100 kosmetyki-tlo">
     <div class="width1 block uslugi">
-        <h2 class="h2-text">Kosmetyka</h2>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        @foreach($content as $tresc)
+            @if($tresc->pozycja == 'Kosmetyka')
+                <h2 class="h2-text">{{ $tresc->tytul }}</h2>
+                <span>{{ $tresc->skrot }}</span>
+            @endif
+        @endforeach
         <div class="lista-uslugi">
-            <ul class="lista-uslugi-1">
-                <li>
-                    <img src="">
-                    <h3>Pielęgnacja twarzy</h3>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
-                </li>
-                <li>
-                    <img src="">
-                    <h3>Przekłuwanie uszu</h3>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
-                </li>
-                <li>
-                    <img src="">
-                    <h3>Makijaż</h3>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
-                </li>
-            </ul>
+                    <ul class="lista-uslugi-1">
+                        @foreach($uslugi as $usluga)
+                            @if($usluga->kategoria == 'Kosmetyka')
+                                <li>
+                                    <img src="galery/{{ $usluga->zdjecie }}">
+                                    <h3>{{ $usluga->tytul }}</h3>
+                                    <span>{{ $usluga->skrot }}</span>
+                                </li>
+                            @endif
+                        @endforeach
+                    </ul>
         </div>
         <div class="cennik-startowa-tlo">
             <div class="cennik-startowa">

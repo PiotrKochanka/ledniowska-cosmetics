@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--Styles-->
         <link rel="stylesheet" href="{{ asset('css/szkielet.css') }}">
@@ -28,16 +29,16 @@
     <body>
         <nav id="menu-mobilne">
             <div class="menu-mobilne-pasek">
-                <a class="menu-mobilne-logo" href="start,0"><img src="grafika/logo.png" alt="Logo" title="Powrót do strony głównej"></a>
+                <a class="menu-mobilne-logo" href="/"><img src="graphic/logo.png" alt="Logo" title="Powrót do strony głównej"></a>
                 <div class="menu-mobile-button"><div class="hamburger"><span></span><span></span><span></span><span></span></div></div>
             </div>
             <div class="menu-mobilne-tekst">
-                <div id="menu-gora-mobilne" class="width1 block">
+                <div id="menu-gora-mobilne" class="">
                     <!--Menu-->
-                    <ul class="menu-gora-1-poziom">
+                    <ul class="menu-mobilne-1-poziom">
                         <li><a href="#o-nas-odn">O Nas</a></li>
                         <li><a href="#uslugi-odn">Usługi</a>
-                            <ul class="menu-gora-2-poziom">
+                            <ul class="menu-mobilne-2-poziom">
                                 <li><a href="/kosmetyka">Kosmetyka</a></li>
                                 <li><a href="/medycyna">Medycyna estetyczna</a></li>
                             </ul>

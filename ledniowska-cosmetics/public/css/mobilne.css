@@ -3,11 +3,287 @@
     display: none;
 }
 
+.menu-mobilne-pasek {
+	width: 100vw;
+	background: #fde9e8;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	position: fixed;
+	z-index: 1001;
+	-webkit-box-shadow: 0px 3px 9px -7px rgba(66, 68, 90, 1);
+	-moz-box-shadow: 0px 3px 9px -7px rgba(66, 68, 90, 1);
+	box-shadow: 0px 3px 9px -7px rgba(66, 68, 90, 1);
+}
+
+.menu-mobilne-logo img {
+    max-height: 80px;
+    margin-left: 8px;
+}
+
+.menu-mobile-button	{
+	position: relative;
+	margin-left: 32px;
+}
+
+/*hamburger menu*/
+.hamburger{
+	width: 38px;
+	height: 28px;
+ 	position: relative;
+	margin: 8px 16px 8px auto;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+.hamburger span{
+	display: block;
+	position: absolute;
+	height: 2px;
+ 	width: 100%;
+	background: #616b62;
+	border-radius: 10px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger span:nth-child(2),.hamburger span:nth-child(3) {
+  top: 12px;
+}
+
+.hamburger span:nth-child(4) {
+  top: 24px;
+}
+
+.hamburger-open span:nth-child(1) {
+  top: 12px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburger-open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.hamburger-open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.hamburger-open span:nth-child(4) {
+  top: 12px;
+  width: 0%;
+  left: 50%;
+}
+.menu-mobilne-tekst {
+	background: #fde9e8;
+	color: white;
+	width: 100vw;
+  	position: fixed;
+	z-index: 1002;
+	left: -101vw;
+	top: 80px;
+	transition: all 0.5s;
+	max-width: 100%;
+	margin-left:0px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.menu-mobilne-tekst-pokaz {
+	left: 0;
+}
+
+.menu-mobilne-tekst > ul{
+	margin:0px;
+	padding: 0px 0px 60px 0px;
+}
+
+.menu-mobilne-1-poziom{
+	width: 100%;
+	display: block;
+	margin: 0px auto;
+	padding: 0px;
+	position: relative;
+	overflow-y: auto;
+}
+
+.menu-mobilne-1-poziom li{
+	max-width: 95%;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+.menu-mobilne-1-poziom > li{
+	list-style: none;
+	border-bottom: 1px solid #08270527;
+}
+
+.menu-mobilne-1-poziom li > a,
+.menu-mobilne-1-poziom li > span{
+	padding: 8px;
+	margin: 0px;
+	display: block;
+	color: #082705;
+	text-decoration-color: transparent;
+	font-size: 18px;
+}
+
+/*Zewnętrzne linki */
+.menu-mobilne-1-poziom li a[href^="http://"]::after,
+.menu-mobilne-1-poziom li a[href^="https://"]::after,
+.menu-mobilne-1-poziom li a[href^="//"]::after {
+	font-family: "Font Awesome 5 Free";
+	font-size: 75%;
+  content: "\f35d";
+	opacity: 0.5;
+	padding: 0px 4px;
+	position: relative;
+	top: -2px;
+	color:white;
+}
+
+/*strzałki przy rozwijkach */
+.menu-mobilne-1-poziom > li.rozwijka:before{
+	font-family: "Font Awesome 5 Free" !important;
+  content: "\f107";
+  color: #082705;
+  position: absolute;
+	right: 24px;
+	margin: 14px 0px 0px 0px;
+}
+
+/* nagłówek mobilka logo tekst */
+
+.mobilny-nagl
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 16px;
+	padding-right: 8px;
+}
+
+/*2gi poziom*/
+
+.menu-mobilne-2-poziom{
+	display:none;
+}
+
+.menu-mobilne-2-poziom{
+	width: 100%;
+	position: relative;
+	top:0;
+	padding-bottom: 16px;
+	padding-left: 24px;
+	list-style-type: none;
+}
+
+ul.menu-mobilne-2-poziom > li{
+	position: relative;
+    z-index: 9;
+    min-width:100%;
+}
+
+
+ul.menu-mobilne-2-poziom li a, ul.menu-mobilne-2-poziom li span{
+	padding: 2px 0px;
+	border:none!important;
+	font-size: 16px;
+}
+
+/*3 poziom*/
+.menu-mobilne-3-poziom{
+	display:none;
+	position: relative;
+	top: 0;
+	z-index: 9;
+	width: 100%;
+	padding-left: 24px;
+	list-style-type: none;
+}
+
+@media all and (min-width: 0px) and (max-width: 639px)
+{
+    .lista-onas-1
+    {
+        flex-wrap: wrap;
+        gap: 16px 0;
+    }
+    .lista-onas-1 li
+    {
+        max-width: 100vh;
+        width: 100%;
+    }
+    .lista-uslugi
+    {
+        flex-wrap: wrap;
+        gap: 16px 0;
+    }
+    .uslugi-ikona-tlo
+    {
+        height: 300px;
+    }
+    .galeria
+    {
+        display: none;
+    }
+    .uslugi-tlo
+    {
+        background-image: none;
+    }
+    .uslugi > span
+    {
+        padding: 0 24px;
+    }
+}
+
 @media all and (min-width: 320px) and (max-width: 1023px)
 {
     .sticky
     {
         display: none;
+    }
+    .start-foto, .kosmetyka-foto, .medycyna-foto, .foto
+    {
+        background-size: cover!important;
+        top: 0px!important;
+    }
+    #menu-mobilne
+    {
+        display: block;
+    }
+    #menu-gora
+    {
+        display: none;
+    }
+    .animacja-dane
+    {
+        margin-top: 0!important;
+    }
+    .width1
+    {
+        width: 100%;
+    }
+    .button-top a
+    {
+        display: none;
+    }
+    .stopka-info {
+        flex-wrap: wrap;
+        gap: 24px 0;
+        padding-left: 24px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .stopka-t
+    {
+        padding: 0 24px;
     }
 }
 

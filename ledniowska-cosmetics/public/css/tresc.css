@@ -126,6 +126,7 @@
 
 .lista-onas-1 li 
 {
+    width: 100%;
     max-width: 30vw;
     height: 400px;
     display: flex;
@@ -239,6 +240,7 @@
     display: flex;
     gap: 0 48px;
     padding: 0 8px;
+    justify-content: center;
 }
 
 .lista-uslugi h3 
@@ -259,6 +261,14 @@
     -moz-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
     box-shadow: 0px 0px 34px -6px rgba(215, 215, 215, 0.568);
     border-radius: 0.3em;
+    width: 100%;
+}
+
+.kosmetyki-tlo .lista-uslugi li, .medycyna-tlo .lista-uslugi li
+{
+    width: 100%;
+    max-width: 380px;
+    min-width: 380px;
 }
 
 .lista-uslugi li span 
@@ -388,7 +398,9 @@
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 0 32px;
+    gap: 32px 32px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .lista-uslugi-1 li

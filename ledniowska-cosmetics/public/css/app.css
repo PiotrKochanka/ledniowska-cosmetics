@@ -1965,7 +1965,7 @@ progress {
   margin-bottom: 1rem;
   color: #212529;
   vertical-align: top;
-  border-color: #dee2e6;
+  border-color: #f3f3f3;
 }
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
@@ -11427,6 +11427,8 @@ main.py-4
   padding-left: 400px;
   display: flex;
   align-items: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .table thead 
@@ -11442,4 +11444,13 @@ main.py-4
 .register-tlo .col-md-8
 {
   width: 100%;
+}
+
+.loged
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  gap: 0 4px;
 }

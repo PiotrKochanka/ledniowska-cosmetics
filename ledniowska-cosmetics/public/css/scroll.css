@@ -7,7 +7,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background: white;
+    background: #fde9e8;
     transition: 0.5s;
     gap: 0 126px;
     -webkit-box-shadow: 0px 7px 17px -7px rgba(202, 202, 202, 1);

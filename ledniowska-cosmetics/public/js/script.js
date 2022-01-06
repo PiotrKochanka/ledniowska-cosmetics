@@ -13,7 +13,6 @@ $(document).ready(function() {
 			}
 	
 		$(window).scroll(function() {
-		/* Paralaxa */
 		 var scrolled = $(window).scrollTop()
 		  $('.void-img, .void-2-img, .stopka-kontener, .void-3-img').each(function(index, element) {
 			var initY = $(this).offset().top
@@ -114,7 +113,6 @@ $(document).ready(function() {
 			}
 		});
 		  
-
 		/* odnośniki smooth*/
 		onas = jQuery(".h2-text").offset().top+jQuery(".h2-text").innerHeight()-150;
 		$('.menu-gora-1-poziom > li > a[href="#o-nas-odn"]').click(function(e){
@@ -132,6 +130,16 @@ $(document).ready(function() {
 		$('.menu-gora-1-poziom > li > a[href="#galeria-odn"]').click(function(e){
 			e.preventDefault();
 			$('html,body').animate({scrollTop:galeria}, '300');
+		});
+
+		/*Menu góra mobilne*/
+		$(".menu-mobile-button").click(function(){
+			$(this).toggleClass('menu-mobile-button-pokaz');
+			$(this).children().toggleClass('hamburger-open');
+			$(".menu-mobilne-tekst").toggleClass("menu-mobilne-tekst-pokaz");
+		});
+		$('.menu-mobilne-1-poziom > li span').click(function(){
+			$(this).parent().children(".menu-mobilne-rozwijka-zawartosc").slideToggle();
 		});
 });
 
