@@ -1,6 +1,7 @@
 .cennik-tlo
 {
     margin-top: 100px!important;
+    
 }
 
 .cennik-list
@@ -8,6 +9,11 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.cennik-foto
+{
+    background-image: url(../graphic/cennik-tlo.jpeg);
 }
 
 .cennik, .Kosmetyka-cennik, .medycyna-cennik
