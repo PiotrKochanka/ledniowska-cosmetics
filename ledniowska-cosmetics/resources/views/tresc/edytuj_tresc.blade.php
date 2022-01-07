@@ -1,17 +1,21 @@
 @extends('home')
 
 @section('cms-content')
+<!--Treść CMS-->
 <div class="container register-tlo">
     <div class="row justify-content-center">
         <div class="col-md-8">
 
+            <!--Komunikat o powodzeniu-->
             @if(session('status'))
                 <h6 class="alert alert-success">{{ session('status') }}</h6>
             @endif
 
             <div class="card">
+                <!--Tytuł formularza-->
                 <div class="card-header">{{ __('Edytuj Treść') }}</div>
                 <div class="card-body">
+                    <!--Formularz-->
                     <form action="/tresc/edytuj_tresc" method="POST">
                         @csrf
                         <input type="hidden" name="id" value="{{$data['id']}}">

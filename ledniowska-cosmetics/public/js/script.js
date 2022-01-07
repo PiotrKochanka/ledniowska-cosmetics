@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	
 	/* Paralaxa */
 		function isInViewport(node) {
 			  var rect = node.getBoundingClientRect()
@@ -141,12 +140,15 @@ $(document).ready(function() {
 		$('.menu-mobilne-1-poziom > li span').click(function(){
 			$(this).parent().children(".menu-mobilne-rozwijka-zawartosc").slideToggle();
 		});
+		$("a.fancybox").fancybox();
 });
 
 	/* cennik */
 	$(".btn-cennik").click(function(){
 		$(this).parent().children("ul").slideToggle();
    });
+
+  
 	
 	
 	

@@ -1,13 +1,16 @@
 @extends('home')
 
 @section('cms-content')
+<!--Treść CMS-->
 <div class="container register-tlo">
 
+  <!--Komunikat o powodzeniu-->
   @if(session('status'))
     <h6 class="alert alert-success">{{ session('status') }}</h6>
   @endif
 
-  <div class="container">
+  <div class="table-responsive">
+    <!--Dane z bazy danych-->
     <table class="table">
         <thead>
           <tr>
@@ -24,7 +27,7 @@
           <tr>
             <th scope="row">{{ $usluga->id }}</th>
             <td>{{ $usluga->kategoria }}</td>
-            <td><img src="{{ asset('galery/'.$usluga->zdjecie) }}" width="70px" alt="Image"></td>
+            <td><a href="{{ asset('galery/'.$usluga->zdjecie) }}" data-fancybox="images" rel="ligthbox" class="fancybox thumbnail"><img src="{{ asset('galery/'.$usluga->zdjecie) }}" class="img-responsive" width="70px" alt="Image"></a></td>
             <td>{{ $usluga->tytul }}</td>
             <td>{{ $usluga->skrot }}</td>
             <td>
@@ -35,7 +38,7 @@
         @endforeach
         </tbody>
     </table>
-    <a href="uslugi/dodaj_usluge" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Dodaj uslugę</a>
   </div>
+  <a href="uslugi/dodaj_usluge" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline btn btn-primary">Dodaj uslugę</a>
 </div>
 @endsection

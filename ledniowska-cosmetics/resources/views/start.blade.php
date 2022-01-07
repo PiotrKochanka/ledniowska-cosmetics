@@ -22,6 +22,8 @@
                                 </span>
                             @endif
                         @endforeach
+                        <!--Dlaczego my-->
+                        <div class="o-nas-img"><img src="{{asset('graphic/o-nas.png')}}"></div>
                         <div class="lista-onas">
                             <h2 class="h2-text h2-dlaczegomy">Dlaczego My?</h2>
                             <ul class="lista-onas-1">
@@ -37,9 +39,11 @@
                         </div>
                     </div>
                 </div>
+                <!--Przerwa-->
                 <div class="void-img-tlo width100">
                     <div class="void-img"></div>
                 </div>
+                <!--Nasze usługi-->
                 <div id="uslugi-odn" class="uslugi-tlo width100">
                     <div class="uslugi width1 block">
                         <h3 class="h3-uslugi h2-text">Nasze usługi</h3>
@@ -48,6 +52,7 @@
                                 <div class="uslugi-ikona-tlo">
                                     <div class="uslugi-ikona-kosm uslugi-ikona"></div>
                                 </div>
+                                <!--Kosmetyka-->
                                 @foreach($content as $tresc)
                                     @if($tresc->pozycja == 'Kosmetyka')
                                         <h3>{{ $tresc->tytul }}</h3>
@@ -60,6 +65,7 @@
                                 <div class="uslugi-ikona-tlo">
                                     <div class="uslugi-ikona-est uslugi-ikona"></div>
                                 </div>
+                                <!--Medycyna estetyczna-->
                                 @foreach($content as $tresc)
                                     @if($tresc->pozycja == 'Medycyna')
                                         <h3>{{ $tresc->tytul }}</h3>
@@ -70,15 +76,18 @@
                             </li>
                         </ul>
                     </div>
+                    <!--Cennik odnośnik-->
                     <div class="cennik-startowa-tlo">
                         <div class="cennik-startowa">
                             <a href="/cennik" class="cennik-btn">Sprawdź ceny</a>
                         </div>
                     </div>
                 </div>
+                <!--Przerwa-->
                 <div class="void-img-tlo width100">
                     <div class="void-2-img"></div>
                 </div>
+                <!--Fotogaleria-->
                 <h3 id="galeria-odn" class="h3-galeria h2-text">Galeria</h3>
                 <div class="galeria-tlo width1 block">
                     <div class="galeria-main block">
@@ -100,9 +109,10 @@
                         <button class="rotator-play">Play</button>
                     </div>
                 </div>
+                <!--Fotogaleria odnośnik-->
                 <div class="cennik-startowa-tlo">
                     <div class="cennik-startowa">
-                        <a href="#" class="cennik-btn">Pełna galeria</a>
+                        <a href="/pelna_galeria" class="cennik-btn">Pełna galeria</a>
                     </div>
                 </div>
             </main>

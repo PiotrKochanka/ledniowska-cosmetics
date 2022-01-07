@@ -6,11 +6,13 @@ use Illuminate\Http\Request;
 use App\Models\Service;
 use App\Models\Content;
 use App\Models\Galery;
+use App\Models\Price_list;
 use DB;
 
 class TrescController extends Controller
 {
 
+    /* Treść w panelu CMS */
     public function index()
     {
         return view('tresc.index', [
@@ -18,6 +20,7 @@ class TrescController extends Controller
         ]);
     }
 
+    /* Treść strona startowa*/
     public function start()
     {
         return view('start', [
@@ -26,6 +29,7 @@ class TrescController extends Controller
         ]);
     }
 
+    /* Treść medycyna */
     public function medycyna()
     {
         return view('medycyna', [
@@ -34,6 +38,7 @@ class TrescController extends Controller
         ]);
     }
 
+    /* Treść kosmetyka */
     public function kosmetyka()
     {
         return view('kosmetyka', [
@@ -42,6 +47,25 @@ class TrescController extends Controller
         ]);
     }
 
+    /* Treść cennik */
+    public function cennik()
+    {
+        return view('cennik', [
+            'uslugi' => Service::all(),
+            'ceny' => Price_list::all()
+        ]);
+    }
+
+    /* Treść galeria */
+    public function galeria()
+    {
+        return view('pelna_galeria', [
+            'galeria' => Galery::all()
+        ]);
+    }
+
+
+    /* Zmiana treści */
     public function showData($id)
     {
         $data = Content::find($id);

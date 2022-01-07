@@ -1,13 +1,16 @@
 @extends('home')
 
 @section('cms-content')
+<!--Treść CMS-->
 <div class="container register-tlo">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+                <!--Tytuł formularza-->
                 <div class="card-header">{{ __('Dodaj Usługę') }}</div>
 
                 <div class="card-body">
+                    <!--Formularz-->
                     <form method="POST" action="{{ route('uslugi.zapisz') }}" enctype="multipart/form-data">
                         @csrf
 
@@ -15,9 +18,10 @@
                             <label for="kategoria" class="col-md-4 col-form-label text-md-right">{{ __('kategoria') }}</label>
 
                             <div class="col-md-6">
-                                <input id="kategoria1" type="radio" class="" name="kategoria" value="Kosmetyka" required autocomplete="kategoria" autofocus> Kosmetyka
-                                <input id="kategoria2" type="radio" class="" name="kategoria" value="Medycyna estetyczna" required autocomplete="kategoria" autofocus> Medycyna estetyczna
-                            
+                                <select id="kategoria" class="form-select" name="kategoria" required autocomplete="kategoria" autofocus> 
+                                    <option value="Kosmetyka">Kosmetyka</option>
+                                    <option value="Medycyna estetyczna">Medycyna estetyczna</option>
+                                </select>
 
                                 @error('kategoria')
                                     <span class="invalid-feedback" role="alert">

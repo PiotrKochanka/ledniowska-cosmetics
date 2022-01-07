@@ -43,7 +43,7 @@
 	position: absolute;
 	height: 2px;
  	width: 100%;
-	background: #616b62;
+	background: black;
 	border-radius: 10px;
 	opacity: 1;
 	left: 0;
@@ -210,6 +210,18 @@ ul.menu-mobilne-2-poziom li a, ul.menu-mobilne-2-poziom li span{
 
 @media all and (min-width: 0px) and (max-width: 639px)
 {
+    .cennik-list
+    {
+        padding: 0 8px;
+    }
+    .o-nas > span
+    {
+        padding: 0 24px;
+    }
+    .galeria-main .galeria-foto-tlo, .galeria-main
+    {
+        height: 440px;
+    }
     .lista-onas-1
     {
         flex-wrap: wrap;
@@ -241,10 +253,33 @@ ul.menu-mobilne-2-poziom li a, ul.menu-mobilne-2-poziom li span{
     {
         padding: 0 24px;
     }
+    .o-nas {
+        position: relative;
+    }
+    .cennik-startowa-tlo.cennik-startowa-tlo
+    {
+        margin-top: 64px;
+        margin-bottom: 0;
+    }
 }
 
 @media all and (min-width: 320px) and (max-width: 1023px)
 {
+    .menu-cms-tlo
+    {
+        position: relative!important;
+        width: 100%!important;
+    }
+    .container-cms
+    {
+        flex-direction: column;
+    }
+    .cms-tresc
+    {
+        padding-left: 0!important;
+        padding-top: 32px!important;
+        padding-bottom: 32px!important;
+    }
     .sticky
     {
         display: none;

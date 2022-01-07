@@ -1,17 +1,20 @@
 @extends('home')
 
 @section('cms-content')
+<!--Treść CMS-->
 <div class="container register-tlo">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+                <!--Tytuł formularza-->
                 <div class="card-header">{{ __('Dodaj Zdjęcie') }}</div>
 
                 <div class="card-body">
+                    <!--Formularz-->
                     <form method="POST" action="{{ route('galeria.zapisz') }}" enctype="multipart/form-data">
                         @csrf
 
-                        <div class="row mb-1">
+                        <div class="row mb-3">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Tytuł') }}</label>
 
                             <div class="col-md-6">
@@ -25,7 +28,7 @@
                             </div>
                         </div>
 
-                        <div class="row mb-2">
+                        <div class="row mb-3">
                             <label for="zdjecie" class="col-md-4 col-form-label text-md-right">{{ __('zdjęcie') }}</label>
 
                             <div class="col-md-6">

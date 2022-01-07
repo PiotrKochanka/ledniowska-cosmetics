@@ -325,6 +325,11 @@ th {
   border-width: 0;
 }
 
+td
+{
+  max-width: 400px;
+}
+
 label {
   display: inline-block;
 }
@@ -11453,4 +11458,10 @@ main.py-4
   justify-content: center;
   margin-top: 32px;
   gap: 0 4px;
+}
+
+input:focus, select:focus
+{
+  box-shadow: 0 0 0 0.25rem #b89c3879!important;
+  border-color: #b89c38!important;
 }

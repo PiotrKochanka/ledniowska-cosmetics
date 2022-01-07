@@ -1,17 +1,21 @@
 @extends('home')
 
 @section('cms-content')
+<!--Treść CMS-->
 <div class="container register-tlo">
     <div class="row justify-content-center">
         <div class="col-md-8">
 
+            <!--Komunikat o powodzeniu-->
             @if(session('status'))
                 <h6 class="alert alert-success">{{ session('status') }}</h6>
             @endif
 
             <div class="card">
+                <!--Tytuł formularza-->
                 <div class="card-header">{{ __('Edytuj Usługę') }}</div>
                 <div class="card-body">
+                    <!--Formularz-->
                     <form action="{{ url('uslugi/zaktualizuj/'.$service->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
@@ -20,8 +24,10 @@
                             <label for="kategoria" class="col-md-4 col-form-label text-md-right">{{ __('kategoria') }}</label>
 
                             <div class="col-md-6">
-                                <input id="kategoria1" type="radio" class="" name="kategoria" value="{{$service['kategoria']}}" required autocomplete="kategoria" autofocus> Kosmetyka
-                                <input id="kategoria2" type="radio" class="" name="kategoria" value="{{$service['kategoria']}}" required autocomplete="kategoria" autofocus> Medycyna estetyczna
+                                <select id="kategoria" class="form-select" name="kategoria" required autocomplete="kategoria" autofocus> 
+                                    <option value="Kosmetyka" @if($service['kategoria'] == 'Kosmetyka')selected="selected"@endif>Kosmetyka</option>
+                                    <option value="Medycyna estetyczna" @if($service['kategoria'] == 'Medycyna estetyczna')selected="selected"@endif>Medycyna estetyczna</option>
+                                </select>
                             
 
                                 @error('kategoria')
@@ -36,7 +42,7 @@
                             <label for="zdjecie" class="col-md-4 col-form-label text-md-right">{{ __('zdjęcie') }}</label>
 
                             <div class="col-md-6">
-                                <input id="zdjecie" type="file" class="form-control @error('zdjecie') is-invalid @enderror" name="zdjecie" value="{{$service['zdjecie']}}" required autocomplete="zdjecie" autofocus>
+                                <input id="zdjecie" type="file" class="form-control @error('zdjecie') is-invalid @enderror" name="zdjecie">
                                 <img src="{{ asset('galery/'.$service->zdjecie) }}" width="70px" alt="Image">
                                 @error('zdjecie')
                                     <span class="invalid-feedback" role="alert">

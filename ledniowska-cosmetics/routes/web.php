@@ -13,31 +13,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* Start */
 Route::get('/', [App\Http\Controllers\TrescController::class, 'start']);
 
+/* Usługi */
+// Kosmetyka
 Route::get('/kosmetyka', [App\Http\Controllers\TrescController::class, 'kosmetyka']);
 
+// Medycyna
 Route::get('/medycyna', [App\Http\Controllers\TrescController::class, 'medycyna']);
 
+/* Kontakt */
 Route::get('/kontakt', function()
 {
     return view('kontakt');
 });
 
-Route::view('/cennik', 'cennik');
-Route::post('cennik', [cennikForm::class, 'cennik']);
+/* Galeria */
+Route::get('/pelna_galeria', [App\Http\Controllers\TrescController::class, 'galeria']);
 
-Route::any('/welcome', function () {
-    return view('welcome');
-});
+/* Cennik */
+Route::get('/cennik', [App\Http\Controllers\TrescController::class, 'cennik']);
 
+/* CMS */ 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/cms-cennik', [App\Http\Controllers\UserController::class, 'index'])->name('cms-cennik');
-
-/* CMS */ 
 
 // users
 Route::get('users', [App\Http\Controllers\UserController::class, 'index'])->name('users');
@@ -64,3 +65,11 @@ Route::get('galeria', [App\Http\Controllers\GaleriaController::class, 'index']);
 Route::get('galeria/dodaj_zdjecie', [App\Http\Controllers\GaleriaController::class, 'create'])->name('galeria.dodaj_zdjecie');
 Route::post('galeria/zapisz_zdjecie', [App\Http\Controllers\GaleriaController::class, 'store'])->name('galeria.zapisz');
 Route::get('galeria/delete/{id}', [App\Http\Controllers\GaleriaController::class, 'destroy']);
+
+// cennik 
+Route::get('cms-cennik', [App\Http\Controllers\CennikController::class, 'index']);
+Route::get('cennik/dodaj_zabieg', [App\Http\Controllers\CennikController::class, 'create'])->name('cennik.dodaj_zabieg');
+Route::post('cennik/zapisz_zabieg', [App\Http\Controllers\CennikController::class, 'store'])->name('cennik.zapisz');
+Route::get('cennik/edytuj_zabieg/{id}', [App\Http\Controllers\CennikController::class, 'showData']);
+Route::put('cennik/zaktualizuj/{id}', [App\Http\Controllers\CennikController::class, 'update']);
+Route::get('cennik/delete/{id}', [App\Http\Controllers\CennikController::class, 'destroy']);
