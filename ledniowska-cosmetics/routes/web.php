@@ -73,3 +73,11 @@ Route::post('cennik/zapisz_zabieg', [App\Http\Controllers\CennikController::clas
 Route::get('cennik/edytuj_zabieg/{id}', [App\Http\Controllers\CennikController::class, 'showData']);
 Route::put('cennik/zaktualizuj/{id}', [App\Http\Controllers\CennikController::class, 'update']);
 Route::get('cennik/delete/{id}', [App\Http\Controllers\CennikController::class, 'destroy']);
+
+// nowości
+Route::get('nowosci', [App\Http\Controllers\NewsController::class, 'index']);
+Route::get('nowosci/dodaj_nowosc', [App\Http\Controllers\NewsController::class, 'create'])->name('nowosci.dodaj_nowosc');
+Route::post('nowosci/zapisz_nowosc', [App\Http\Controllers\NewsController::class, 'store'])->name('nowosci.zapisz');
+Route::get('nowosci/edytuj_nowosc/{id}', [App\Http\Controllers\NewsController::class, 'showData']);
+Route::put('nowosci/zaktualizuj/{id}', [App\Http\Controllers\NewsController::class, 'update']);
+Route::get('nowosci/delete/{id}', [App\Http\Controllers\NewsController::class, 'destroy']);

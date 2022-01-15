@@ -11,7 +11,17 @@
                 <div class="start-foto foto"></div>
             @stop
             <main>
-                <!--O Nas-->
+                <!--Nowości-->
+                <div class="width100 nowosci-tlo">
+                    <div class="width1 block nowosci">
+                        @foreach($news as $new)
+                        <div class="nowosc">
+                            <img src="{{ asset('galery/'.$new->zdjecie) }}" alt="Nowości">
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                <!--Nas-->
                 <div id="o-nas-odn" class="width100 o-nas-tlo">
                     <div class="width1 block o-nas">
                         @foreach($content as $tresc)

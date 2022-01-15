@@ -485,3 +485,28 @@
 {
     margin-top: 16px;
 }
+
+/* Nowości */
+
+.nowosci
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.nowosc
+{
+    display: flex;
+    justify-content: center;
+    gap: 32px 0;
+}
+
+.nowosc img
+{
+    max-height: 600px;
+    object-fit: contain;
+    margin-top: 48px!important;    
+    -webkit-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
+    -moz-box-shadow: 0px 14px 34px -6px rgba(215, 215, 215, 1);
+    box-shadow: 0px 0px 34px -6px rgba(215, 215, 215, 0.568);
+}

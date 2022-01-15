@@ -45,7 +45,7 @@ main
     background: url(../graphic/bottom-web.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .stopka-t 

@@ -13,6 +13,7 @@
         </div>
         <!-- CMS menu -->
         <ul class="menu-cms">
+            <li class="{{ Request::segment(1) === 'nowosci' ? 'active' : null }}"><a href="{{ url('nowosci') }}">Nowości</a></li>
             <li class="{{ Request::segment(1) === 'tresc' ? 'active' : null }}"><a href="{{ url('tresc') }}">Treść</a></li>
             <li class="{{ Request::segment(1) === 'uslugi' ? 'active' : null }}"><a href="{{ url('uslugi') }}">Usługi</a></li>
             <li class="{{ Request::segment(1) === 'cms-cennik' ? 'active' : null }}"><a href="{{ url('cms-cennik') }}">Zabiegi i Cennik</a></li>

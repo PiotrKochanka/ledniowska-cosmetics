@@ -7,6 +7,7 @@ use App\Models\Service;
 use App\Models\Content;
 use App\Models\Galery;
 use App\Models\Price_list;
+use App\Models\News;
 use DB;
 
 class TrescController extends Controller
@@ -25,7 +26,8 @@ class TrescController extends Controller
     {
         return view('start', [
             'content' => Content::all(),
-            'galery' => Galery::all()
+            'galery' => Galery::all(),
+            'news' => News::all()
         ]);
     }
 

@@ -115,7 +115,6 @@
             <div class="stopka-tlo width100">
                 <div class="width1 block stopka-t">
                     <div class="stopka">
-                        <div class="autor"><span>Realizacja: </span><a href="#"><span>Piotr Kochanka</span></a></div>
                         <div class="marka"><span>@ Salon kosmetyczny Sekrety Piękna</span></div>
                     </div>
                     @if (Route::has('login'))
