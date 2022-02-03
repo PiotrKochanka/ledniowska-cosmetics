@@ -24,16 +24,17 @@ Route::get('/kosmetyka', [App\Http\Controllers\TrescController::class, 'kosmetyk
 Route::get('/medycyna', [App\Http\Controllers\TrescController::class, 'medycyna']);
 
 /* Kontakt */
-Route::get('/kontakt', function()
-{
-    return view('kontakt');
-});
+Route::get('/kontakt', [App\Http\Controllers\TrescController::class, 'kontakt']);
 
 /* Galeria */
 Route::get('/pelna_galeria', [App\Http\Controllers\TrescController::class, 'galeria']);
 
 /* Cennik */
 Route::get('/cennik', [App\Http\Controllers\TrescController::class, 'cennik']);
+
+/* Rezerwacja */
+Route::get('/rezerwacja', [App\Http\Controllers\FullCalendarController::class, 'index']);
+Route::post('/rezerwacja/action', [App\Http\Controllers\FullCalendarController::class, 'action']);
 
 /* CMS */ 
 Auth::routes();

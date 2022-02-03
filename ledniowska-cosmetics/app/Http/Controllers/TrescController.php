@@ -31,6 +31,14 @@ class TrescController extends Controller
         ]);
     }
 
+    /* Treść kontakt*/
+    public function kontakt()
+    {
+        return view('kontakt', [
+            'content' => Content::all()
+        ]);
+    }
+
     /* Treść medycyna */
     public function medycyna()
     {
@@ -54,7 +62,8 @@ class TrescController extends Controller
     {
         return view('cennik', [
             'uslugi' => Service::all(),
-            'ceny' => Price_list::all()
+            'ceny' => Price_list::all(), 
+            'content' => Content::all()
         ]);
     }
 
@@ -62,7 +71,8 @@ class TrescController extends Controller
     public function galeria()
     {
         return view('pelna_galeria', [
-            'galeria' => Galery::all()
+            'galeria' => Galery::all(),
+            'content' => Content::all()
         ]);
     }
 

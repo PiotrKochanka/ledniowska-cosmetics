@@ -29,7 +29,7 @@
             <td>{{ $usluga->kategoria }}</td>
             <td><a href="{{ asset('galery/'.$usluga->zdjecie) }}" data-fancybox="images" rel="ligthbox" class="fancybox thumbnail"><img src="{{ asset('galery/'.$usluga->zdjecie) }}" class="img-responsive" width="70px" alt="Image"></a></td>
             <td>{{ $usluga->tytul }}</td>
-            <td>{{ $usluga->skrot }}</td>
+            <td>{!! $usluga->skrot !!}</td>
             <td>
               <a href='{{ url('uslugi/edytuj_usluge/'.$usluga->id) }}'><img src="{{ asset('graphic/edit.png') }}" width="30px" height="30px"></a>
               <a href='delete/uslugi/{{ $usluga->id }}'><img src="{{ asset('graphic/delete.png') }}" width="25px" height="25px"></a>

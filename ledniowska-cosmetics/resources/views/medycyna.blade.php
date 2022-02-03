@@ -26,7 +26,7 @@
                                     <li>
                                         <img src="galery/{{ $usluga->zdjecie }}">
                                         <h3>{{ $usluga->tytul }}</h3>
-                                        <span>{{ $usluga->skrot }}</span>
+                                        <span>{!! $usluga->skrot !!}</span>
                                     </li>
                                 @endif
                             @endforeach

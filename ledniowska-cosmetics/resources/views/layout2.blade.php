@@ -75,6 +75,7 @@
                             <li><a href="/cennik">Cennik</a></li>
                             <li><a href="/#galeria-odn">Galeria</a></li>
                             <li><a href="/kontakt">Kontakt</a></li>
+                            <li><a href="/rezerwacja">Rezerwacje</a></li>
                         </ul>
                     </div>
                 </div>
@@ -87,32 +88,18 @@
         <footer>
             <div class="stopka-kontener width100">
                 <div class="stopka-info stopka-podstrona width1 block">
-                    <div class="kolumna">
-                        <div class="stopka-tresc">
-                            <h3 class="h3-stopka">Lokalizacja</h3>
-                            <div class="stopka-skrot">
-                                <strong>Sekrety piękna</strong>
-                                <p>Al. J. Pawła II 8/5</p>
-                                <p>62-035 Luboń</p>
+                    @foreach($content as $tresc)
+                        @if($tresc->pozycja == 'dane_kontaktowe')
+                            <div class="kolumna">
+                                <div class="stopka-tresc">
+                                    <h3 class="h3-stopka">{{ $tresc->tytul }}</h3>
+                                    <div class="stopka-skrot">
+                                        {!! $tresc->skrot !!}
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="kolumna">
-                        <div class="stopka-tresc">
-                            <h3 class="h3-stopka">Godziny otwarcia</h3>
-                        </div>
-                    </div>
-                    <div class="kolumna">
-                        <div class="stopka-tresc">
-                            <h3 class="h3-stopka">Kontakt</h3>
-                            <p>e-mail: sekretypiekna8@gmail.com</p>
-                            <p>tel: 511 560 987</p>
-                            <div class="social-media">
-                                <a href="#"></a>
-                                <a href="#"></a>
-                            </div>
-                        </div>
-                    </div>
+                        @endif
+                    @endforeach
                 </div>
             </div>
             <div class="stopka-tlo width100">

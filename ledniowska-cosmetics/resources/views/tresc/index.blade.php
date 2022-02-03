@@ -21,7 +21,7 @@
               <th scope="row">{{ $tresc->id }}</th>
               <td>{{ $tresc->pozycja }}</td>
               <td>{{ $tresc->tytul }}</td>
-              <td>{{ $tresc->skrot }}</td>
+              <td>{!! $tresc->skrot !!}</td>
               <td>
                 <a href='tresc/edytuj_tresc/{{ $tresc->id }}'><img src="{{ asset('graphic/edit.png') }}" width="30px" height="30px"></a>
               </td>

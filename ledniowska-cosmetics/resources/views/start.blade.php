@@ -28,7 +28,7 @@
                             @if($tresc->pozycja == 'O-Nas')
                                 <h2 class="h2-text">{{ $tresc->tytul }}</h2>
                                 <span>
-                                    {{ $tresc->skrot }}
+                                    {!! $tresc->skrot !!}
                                 </span>
                             @endif
                         @endforeach
@@ -41,7 +41,7 @@
                                     @if($tresc->pozycja == 'Dlaczego_my')
                                         <li>
                                             <h3>{{ $tresc->tytul }}</h3>
-                                            <span>{{ $tresc->skrot }}</span>
+                                            <span>{!! $tresc->skrot !!}</span>
                                         </li>
                                     @endif
                                 @endforeach
@@ -66,7 +66,7 @@
                                 @foreach($content as $tresc)
                                     @if($tresc->pozycja == 'Kosmetyka')
                                         <h3>{{ $tresc->tytul }}</h3>
-                                        <span>{{ $tresc->skrot }}</span>
+                                        <span>{!! $tresc->skrot !!}</span>
                                     @endif
                                 @endforeach
                                 <a href="/kosmetyka" class="btn-more">Zobacz więcej</a>
@@ -79,7 +79,7 @@
                                 @foreach($content as $tresc)
                                     @if($tresc->pozycja == 'Medycyna')
                                         <h3>{{ $tresc->tytul }}</h3>
-                                        <span>{{ $tresc->skrot }}</span>
+                                        <span>{!! $tresc->skrot !!}</span>
                                     @endif
                                 @endforeach
                                 <a href="/medycyna" class="btn-more">Zobacz więcej</a>

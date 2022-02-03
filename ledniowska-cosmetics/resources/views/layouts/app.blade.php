@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -14,6 +15,12 @@
     <script src="{{ asset('js/script.js') }}" defer></script>
     <script src="{{ asset('js/slick.min.js') }}" defer></script>
     <script src="{{ url('https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js') }}"></script>
+    <script src="https://cdn.tiny.cloud/1/j6s1ewp63sq0dny54m6ixtvwph598esa6vgajcz9ff11cua7/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector:'#skrot'
+        });
+    </script>
 
 
     <!-- Fonts -->

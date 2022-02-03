@@ -70,9 +70,7 @@
                             <label for="skrot" class="col-md-4 col-form-label text-md-right">{{ __('Skrót') }}</label>
 
                             <div class="col-md-6">
-                                <textarea id="skrot" class="form-control @error('skrot') is-invalid @enderror" name="skrot" required autocomplete="skrot">
-                                    {{$service['skrot']}}
-                                </textarea>
+                                <textarea id="skrot" class="form-control @error('skrot') is-invalid @enderror" name="skrot" required autocomplete="skrot">@if( $service['skrot'] == "" ) <p>Strona w przygotowaniu...</p> @else {{ $service['skrot'] }} @endif</textarea>
                                 @error('skrot')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
