@@ -47,4 +47,4 @@ Nowoczesna i responsywna strona internetowa stworzona w Laravel, MySQL, JavaScri
 
 1. **Sklonuj repozytorium:**
    ```bash
-   git clone https://github.com/twoja-nazwa-uzytkownika/kosmetyczny-salon.git
+   git clone https://github.com/PiotrKochanka/ledniowska-cosmetics.git
